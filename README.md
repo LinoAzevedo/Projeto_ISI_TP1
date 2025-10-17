@@ -1,59 +1,74 @@
-# CO2Drive Analytics — Vendas × Emissões de CO₂ (KNIME)
+# Como executar isto
 
-**Objetivo:** calcular e analisar a **emissão média de CO₂ ponderada pelas vendas** (24 meses), por marca/modelo/combustível, com um pipeline **KNIME → BD → (opcional) dashboard**.
+## 1) Instalar o Knime
 
-## Estrutura
-```
-co2drive-analytics/
-├─ knime/                     # workflows .knwf (importa no KNIME)
-├─ data/
-│  ├─ raw/                    # fontes originais (CSV/JSON/XML/YAML)
-│  ├─ staged/                 # dados após limpeza/normalização
-│  └─ warehouse/              # extratos para dashboard
-├─ db/                        # DDL schema estrela
-├─ dashboards/                # Node-RED ou HTML simples
-├─ scripts/                   # utilitários (ex.: geração de dados)
-├─ logs/                      # logs do ETL
-└─ docs/
-   ├─ relatorio/              # relatório final (PDF)
-   └─ video/                  # vídeo + QR
-```
+1. [Aqui](https://www.knime.com/downloads)
 
-## Dados de exemplo
-- `data/raw/car_specs.csv` — specs por modelo (CO₂, NOx, Euro, combustível…)
-- `data/raw/sales.csv` — vendas mensais por modelo (24 meses)
-- `data/raw/fuel_mapping.json` — mapeamento de combustíveis (EV/PHEV/…)
-- `data/raw/regulatory_limits.xml` — limites por Euro/fuel (exemplo)
-- `data/raw/segments.yaml` — segmentos (exemplo)
+## 2) Instalar e executar o Node-RED
 
-> Substitui por dados reais quando tiveres. Os formatos foram escolhidos para cumprir diversidade (CSV/JSON/XML/YAML) e integração via HTTP.
+**macOS / Linux (npm):**
+~~~bash
+sudo npm install -g --unsafe-perm node-red
+node-red
+~~~
 
-## KPIs
-- **CO₂ médio ponderado por vendas** (mensal, por marca/segmento).
-- Mix de vendas por **combustível**.
-- Top modelos que mais sobem/baixam a média de CO₂.
+**Windows (npm):**
+~~~cmd
+npm install -g --unsafe-perm node-red
+node-red
+~~~
 
-## Passos rápidos
-1. **BD**: cria o schema com [`db/ddl.sql`](db/ddl.sql) no PostgreSQL/MySQL.
-2. **KNIME**: cria um workflow com:
-   - `CSV Reader` (car_specs, sales) + `JSON Reader` (ou `GET Request`) p/ `fuel_mapping.json`
-   - `XML Reader` p/ `regulatory_limits.xml`
-   - Limpeza com `String Manipulation (Regex)` e `Column Expressions`
-   - `Joiner` para cruzar vendas↔specs; calcular KPIs com `Math Formula`
-   - Escrever dimensões e factos com `DB Writer`
-   - Encadear no `Try/Catch` e gravar logs em `logs/`
-3. (Opcional) **Dashboard**: exporta agregados para `data/warehouse/` e usa Node-RED/HTML.
+Depois abrir o editor em: [http://localhost:1880](http://localhost:1880)
 
-## GitHub — como publicar
-```bash
-git init
-git add .
-git commit -m "Initial commit: KNIME CO2Drive Analytics scaffold"
-git branch -M main
-# cria o repo vazio no GitHub com este mesmo nome (via UI ou GitHub CLI)
-git remote add origin https://github.com/<teu-utilizador>/co2drive-analytics.git
-git push -u origin main
-```
+---
 
-## Licença
-MIT — vê [`LICENSE`](LICENSE).
+## 3) Instalar o *add-on* de *dashboard* do Node-RED
+
+No editor:  
+**Menu → Manage Palette → Install** e procura por:
+- `@flowfuse/node-red-dashboard`
+
+A *Dashboard* fica em: [http://localhost:1880/ui](http://localhost:1880/ui)
+
+---
+
+## 4) Abrir os Projetos nos devidos programas
+
+Node Red:
+
+1. Copiar o JSON
+2. na interface gráfica do Node-Red vai a Importar > Clipboard
+3. Colar o JSON
+4. Selecionar New Flow
+5. Carregar em OK
+
+Knime:
+
+1. Abrir o ficheiro .Knwf com o Knime
+
+
+## 5) Escolher o caminho dos logs (ficheiros) — KNIME
+
+Em cada nó que deseja ler, definir o caminho do CSV.
+Exemplo:
+- **Windows:** `C:\Users\<user>\Projetos\ProjetoISI_1\Data\`
+  
+Em cada nó que escreve ficheiros (*CSV/JSON Writer*), definir o caminho onde quer guardar os respetivos ficheiros.  
+Exemplo:
+- **Windows:** `C:\Users\<user>\Projetos\ProjetoISI_1\Exports\`
+
+## 6) Executar a workflow no botão do Knime
+
+Este passo é autoexplicativo :] 
+
+## 7) Vídeo de Demonstração
+
+Um vídeo completo a demonstrar a execução do projeto está disponível no seguinte link:
+
+[**Vídeo de Demonstração do Projeto**](https://alunosipca-my.sharepoint.com/:v:/g/personal/a23015_alunos_ipca_pt/EWFqwDptrOtLlUX-K-WdLAYBgy2yDIsUbMgniom1WhJIug)
+
+---
+
+## Autor
+
+* **Lino Azevedo** - [Lino Azevedo](https://github.com/LinoAzevedo)
