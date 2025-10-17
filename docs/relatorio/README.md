@@ -1,1 +1,0 @@
-Esqueleto do relatório: Enquadramento, Problema, Estratégia, Transformações, Jobs, Vídeo (QR), Conclusões, Referências.
