@@ -26,7 +26,7 @@ Depois abrir o editor em: [http://localhost:1880](http://localhost:1880)
 
 No editor:  
 **Menu → Manage Palette → Install** e procura por:
-- `@flowfuse/node-red-dashboard`
+- `node-red-dashboard`
 
 A *Dashboard* fica em: [http://localhost:1880/ui](http://localhost:1880/ui)
 
