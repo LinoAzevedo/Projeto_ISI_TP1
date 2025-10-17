@@ -1,0 +1,71 @@
+[ {
+  "Brand" : "volkswagen",
+  "Total_Receita" : 57500,
+  "Max_Venda" : 12800,
+  "Min_Venda" : 9800,
+  "Avg_Venda" : 11500.0,
+  "N_Vendas" : 5
+}, {
+  "Brand" : "kia",
+  "Total_Receita" : 43750,
+  "Max_Venda" : 11500,
+  "Min_Venda" : 10200,
+  "Avg_Venda" : 10937.5,
+  "N_Vendas" : 4
+}, {
+  "Brand" : "toyota",
+  "Total_Receita" : 25000,
+  "Max_Venda" : 13200,
+  "Min_Venda" : 11800,
+  "Avg_Venda" : 12500.0,
+  "N_Vendas" : 2
+}, {
+  "Brand" : "hyundai",
+  "Total_Receita" : 24100,
+  "Max_Venda" : 14200,
+  "Min_Venda" : 9900,
+  "Avg_Venda" : 12050.0,
+  "N_Vendas" : 2
+}, {
+  "Brand" : "honda",
+  "Total_Receita" : 21850,
+  "Max_Venda" : 11100,
+  "Min_Venda" : 10750,
+  "Avg_Venda" : 10925.0,
+  "N_Vendas" : 2
+}, {
+  "Brand" : "bmw",
+  "Total_Receita" : 14500,
+  "Max_Venda" : 14500,
+  "Min_Venda" : 14500,
+  "Avg_Venda" : 14500.0,
+  "N_Vendas" : 1
+}, {
+  "Brand" : "mercerdes",
+  "Total_Receita" : 13800,
+  "Max_Venda" : 13800,
+  "Min_Venda" : 13800,
+  "Avg_Venda" : 13800.0,
+  "N_Vendas" : 1
+}, {
+  "Brand" : "mercedes",
+  "Total_Receita" : 13100,
+  "Max_Venda" : 13100,
+  "Min_Venda" : 13100,
+  "Avg_Venda" : 13100.0,
+  "N_Vendas" : 1
+}, {
+  "Brand" : "audi",
+  "Total_Receita" : 12100,
+  "Max_Venda" : 12100,
+  "Min_Venda" : 12100,
+  "Avg_Venda" : 12100.0,
+  "N_Vendas" : 1
+}, {
+  "Brand" : "chevrolet",
+  "Total_Receita" : 10450,
+  "Max_Venda" : 10450,
+  "Min_Venda" : 10450,
+  "Avg_Venda" : 10450.0,
+  "N_Vendas" : 1
+} ]

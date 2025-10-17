@@ -1,0 +1,3219 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1200"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     style="display: block;" class="colored nvd3-svg"
+     contentStyleType="text/css" height="600"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.0">
+    <style type="text/css" xml:space="preserve">.nvd3 .nv-axis line, .nvd3 .nv-axis path { fill: none; shape-rendering: crispedges; }
+.nv-brush .extent, .nvd3 .background path, .nvd3 .nv-axis line, .nvd3 .nv-axis path { shape-rendering: crispedges; }
+.nv-distx, .nv-disty, .nv-noninteractive, .nvd3 .nv-axis, .nvd3.nv-pie .nv-label, .nvd3.nv-sparklineplus g.nv-hoverValue { pointer-events: none; }
+.nvd3 .nv-axis { opacity: 1; }
+.nvd3 .nv-axis path { stroke: rgb(0, 0, 0); stroke-opacity: 0.75; }
+.nvd3 .nv-axis path.domain { stroke-opacity: 0.75; }
+.nvd3 .nv-axis.nv-x path.domain { stroke-opacity: 0; }
+.nvd3 .nv-axis line { stroke: rgb(229, 229, 229); }
+.nvd3 .nv-axis .zero line, .nvd3 .nv-axis line.zero { stroke-opacity: 0.75; }
+.nvd3 .nv-axis .nv-axisMaxMin text { font-weight: 700; }
+.nvd3 .nv-discretebar .nv-groups rect, .nvd3 .nv-multibar .nv-groups rect, .nvd3 .nv-multibarHorizontal .nv-groups rect { stroke-opacity: 0; transition: fill-opacity 250ms linear; }
+.nvd3 .nv-discretebar .nv-groups text, .nvd3 .nv-multibarHorizontal .nv-groups text { font-weight: 700; fill: rgb(0, 0, 0); stroke: none; }
+.nvd3 text { font: 400 12px Arial, sans-serif; }
+.nvd3 .nv-legend .nv-series { cursor: pointer; }</style><style type="text/css"
+           xml:space="preserve">.knime-title { color: black; fill: black; font-size: 24px; }
+.knime-label, .knime-axis-label, .knime-tick-label, .knime-label text, text.knime-axis-label, text.knime-tick-label { color: black; fill: black; font-size: 12px; }
+.knime-legend-label, text.knime-legend-label { color: black; fill: black; font-size: 12px; font-weight: normal; }</style><style type="text/css"
+           xml:space="preserve">svg.colored .nvd3 .nv-multibar .nv-groups rect, svg.colored .nvd3 .nv-multibarHorizontal .nv-groups rect, svg.colored .nvd3 .nv-discretebar .nv-groups rect { fill: inherit !important; stroke: inherit !important; }</style><text x="20"
+          y="30" id="title" class="knime-title">
+        Bar Chart
+    </text>
+    <g class="nvd3 nv-wrap nv-multiBarHorizontalChart"
+       transform="translate(59.365234375,60)">
+        <g>
+            <g class="nv-x nv-axis nvd3-svg knime-axis knime-x">
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,14.714659685863877)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2000-1
+                                <title class="knime-tooltip">
+                                    2000-1
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,41.46858638743456)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2001-12
+                                <title class="knime-tooltip">
+                                    2001-12
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,68.22251308900525)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2003-3
+                                <title class="knime-tooltip">
+                                    2003-3
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,94.97643979057592)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2004-5
+                                <title class="knime-tooltip">
+                                    2004-5
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,121.73036649214662)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2004-10
+                                <title class="knime-tooltip">
+                                    2004-10
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,148.4842931937173)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2005-8
+                                <title class="knime-tooltip">
+                                    2005-8
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,175.23821989528795)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2006-8
+                                <title class="knime-tooltip">
+                                    2006-8
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,201.99214659685865)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2007-3
+                                <title class="knime-tooltip">
+                                    2007-3
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,228.74607329842934)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2007-7
+                                <title class="knime-tooltip">
+                                    2007-7
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,255.50000000000003)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2009-2
+                                <title class="knime-tooltip">
+                                    2009-2
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,282.2539267015707)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2010-4
+                                <title class="knime-tooltip">
+                                    2010-4
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,309.0078534031414)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2012-9
+                                <title class="knime-tooltip">
+                                    2012-9
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,335.76178010471205)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2013-1
+                                <title class="knime-tooltip">
+                                    2013-1
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,362.51570680628276)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2014-5
+                                <title class="knime-tooltip">
+                                    2014-5
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,389.2696335078534)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2017-11
+                                <title class="knime-tooltip">
+                                    2017-11
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,416.02356020942415)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2020-2
+                                <title class="knime-tooltip">
+                                    2020-2
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,442.7774869109948)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2020-6
+                                <title class="knime-tooltip">
+                                    2020-6
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,469.5314136125655)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2021-6
+                                <title class="knime-tooltip">
+                                    2021-6
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,496.2853403141362)">
+                            <line class="knime-tick-line" y2="0"
+                                  x2="1120.417578125"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                2023-11
+                                <title class="knime-tooltip">
+                                    2023-11
+                                </title>
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line" d="M0,0H0V511H0"/>
+                        <text x="-242.1230366492147" y="-79.365234375"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              transform="rotate(-90)">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-y nv-axis nvd3-svg knime-axis knime-y"
+               transform="translate(0,511)">
+                <g class="nv-zeroLine">
+                    <line y2="-511" x1="0" x2="0" y1="0"/>
+                </g>
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,0)">
+                            <line y2="-511" class="knime-tick-line" x2="0"/>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(230.53859632201647,0)">
+                            <line y2="-511" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                5000
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(461.07719264403295,0)">
+                            <line y2="-511" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                10000
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(691.6157889660494,0)">
+                            <line y2="-511" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                15000
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(922.1543852880659,0)">
+                            <line y2="-511" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                20000
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line"
+                              d="M0,0V0H1120.417578125V0"/>
+                        <text x="560.2087890625" y="26"
+                              style="pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              text-anchor="middle">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-x nv-axisMin-x knime-axis-max-min"
+                       transform="translate(0,0)">
+                        <text dy=".71em" y="3"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="knime-tick-label" transform="">
+                            0
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-x nv-axisMax-x knime-axis-max-min"
+                       transform="translate(1120.417578125,0)">
+                        <text dy=".71em" y="3"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="knime-tick-label" transform="">
+                            24300
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-barsWrap nvd3-svg">
+                <g class="nvd3 nv-wrap nv-multibarHorizontal"
+                   transform="translate(0,0)">
+                    <defs/>
+                    <g>
+                        <g class="nv-groups">
+                            <g class="nv-group nv-series-0"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
+                                <g class="nv-bar positive"
+                                   transform="translate(0,2.6753926701570685)">
+                                    <rect width="497.9633680555556"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,29.429319371727754)">
+                                    <rect width="530.2387715406379"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,350.47643979057597)">
+                                    <rect width="470.2987364969136"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,430.738219895288)">
+                                    <rect width="518.7118417245371"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="487.96337890625" y="12.039266586303711"
+                                      transform="translate(0,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    10800
+                                </text>
+                                <text x="520.23876953125" y="12.039266586303711"
+                                      transform="translate(0,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    11500
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="460.2987365722656"
+                                      y="12.039266586303711"
+                                      transform="translate(0,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    10200
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="508.71185302734375"
+                                      y="12.039266586303711"
+                                      transform="translate(0,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    11250
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-1"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,56.183246073298434)">
+                                    <rect width="451.8556487911523"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,82.93717277486911)">
+                                    <rect width="488.74182420267493"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,163.19895287958116)">
+                                    <rect width="548.6818592463992"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,189.95287958115185)">
+                                    <rect width="571.7357188786009"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,243.46073298429323)">
+                                    <rect width="590.1788065843623"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="441.85565185546875"
+                                      y="12.039266586303711"
+                                      transform="translate(0,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    9800
+                                </text>
+                                <text x="478.7418212890625"
+                                      y="12.039266586303711"
+                                      transform="translate(0,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    10600
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="538.681884765625"
+                                      y="12.039266586303711"
+                                      transform="translate(0,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    11900
+                                </text>
+                                <text x="561.7357177734375"
+                                      y="12.039266586303711"
+                                      transform="translate(0,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    12400
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="580.1788330078125"
+                                      y="12.039266586303711"
+                                      transform="translate(0,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    12800
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-2"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(44, 160, 44); stroke: rgb(44, 160, 44);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,109.6910994764398)">
+                                    <rect width="654.7296135545268"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,377.23036649214663)">
+                                    <rect width="456.4664207175926"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="644.7296142578125"
+                                      y="12.039266586303711"
+                                      transform="translate(0,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    14200
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="446.4664306640625"
+                                      y="12.039266586303711"
+                                      transform="translate(0,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    9900
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-3"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(214, 39, 40); stroke: rgb(214, 39, 40);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,136.4450261780105)">
+                                    <rect width="544.0710873199589"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,216.70680628272254)">
+                                    <rect width="608.6218942901235"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="534.0711059570312"
+                                      y="12.039266586303711"
+                                      transform="translate(0,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    11800
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="598.6218872070312"
+                                      y="12.039266586303711"
+                                      transform="translate(0,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    13200
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-4"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(148, 103, 189); stroke: rgb(148, 103, 189);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(608.6218942901235,216.70680628272254)">
+                                    <rect width="511.7956838348766"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,270.2146596858639)">
+                                    <rect width="495.65798209233543"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="501.7956848144531"
+                                      y="12.039266586303711"
+                                      transform="translate(608.6218942901235,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    11100
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="485.6579895019531"
+                                      y="12.039266586303711"
+                                      transform="translate(0,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    10750
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-5"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(140, 86, 75); stroke: rgb(140, 86, 75);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(1120.417578125,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(495.65798209233543,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,296.9685863874346)">
+                                    <rect width="481.82566631301444"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(1120.417578125,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(495.65798209233543,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="471.8256530761719"
+                                      y="12.039266586303711"
+                                      transform="translate(0,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    10450
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-6"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(227, 119, 194); stroke: rgb(227, 119, 194);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(1120.417578125,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(495.65798209233543,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(481.82566631301444,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,323.72251308900525)">
+                                    <rect width="668.5619293338477"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(1120.417578125,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(495.65798209233543,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(481.82566631301444,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="658.5619506835938"
+                                      y="12.039266586303711"
+                                      transform="translate(0,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    14500
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: black;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-7"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(127, 127, 127); stroke: rgb(127, 127, 127);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(1120.417578125,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(495.65798209233543,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(481.82566631301444,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(668.5619293338477,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,403.98429319371735)">
+                                    <rect width="636.2865258487655"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(1120.417578125,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(495.65798209233543,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(481.82566631301444,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(668.5619293338477,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="626.2864990234375"
+                                      y="12.039266586303711"
+                                      transform="translate(0,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    13800
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-8"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(188, 189, 34); stroke: rgb(188, 189, 34);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(1120.417578125,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(495.65798209233543,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(481.82566631301444,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(668.5619293338477,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(636.2865258487655,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,457.4921465968587)">
+                                    <rect width="604.0111223636832"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(1120.417578125,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(495.65798209233543,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(481.82566631301444,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(668.5619293338477,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(636.2865258487655,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="594.0111083984375"
+                                      y="12.039266586303711"
+                                      transform="translate(0,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    13100
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                            </g>
+                            <g class="nv-group nv-series-9"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(23, 190, 207); stroke: rgb(23, 190, 207);">
+                                <g class="nv-bar positive"
+                                   transform="translate(497.9633680555556,2.6753926701570685)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(530.2387715406379,29.429319371727754)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(451.8556487911523,56.183246073298434)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(488.74182420267493,82.93717277486911)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(654.7296135545268,109.6910994764398)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(544.0710873199589,136.4450261780105)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(548.6818592463992,163.19895287958116)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(571.7357188786009,189.95287958115185)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(1120.417578125,216.70680628272254)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(590.1788065843623,243.46073298429323)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(495.65798209233543,270.2146596858639)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(481.82566631301444,296.9685863874346)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(668.5619293338477,323.72251308900525)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(470.2987364969136,350.47643979057597)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(456.4664207175926,377.23036649214663)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(636.2865258487655,403.98429319371735)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(518.7118417245371,430.738219895288)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(604.0111223636832,457.4921465968587)">
+                                    <rect width="0" height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,484.2460732984294)">
+                                    <rect width="557.9034030992799"
+                                          height="24.078534031413618"/>
+                                    <text/>
+                                </g>
+                                <text x="-10" y="0"
+                                      transform="translate(497.9633680555556,2.6753926701570685)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(530.2387715406379,29.429319371727754)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(451.8556487911523,56.183246073298434)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(488.74182420267493,82.93717277486911)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(654.7296135545268,109.6910994764398)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(544.0710873199589,136.4450261780105)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(548.6818592463992,163.19895287958116)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(571.7357188786009,189.95287958115185)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(1120.417578125,216.70680628272254)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(590.1788065843623,243.46073298429323)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(495.65798209233543,270.2146596858639)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(481.82566631301444,296.9685863874346)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(668.5619293338477,323.72251308900525)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(470.2987364969136,350.47643979057597)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(456.4664207175926,377.23036649214663)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(636.2865258487655,403.98429319371735)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(518.7118417245371,430.738219895288)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="-10" y="0"
+                                      transform="translate(604.0111223636832,457.4921465968587)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    0…
+                                </text>
+                                <text x="547.9033813476562"
+                                      y="12.039266586303711"
+                                      transform="translate(0,484.2460732984294)"
+                                      fill="black" text-anchor="end"
+                                      style="fill: white;"
+                                      dominant-baseline="middle"
+                                      class="knime-static-bar-value"
+                                      stroke="none">
+                                    12100
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-legendWrap nvd3-svg knime-legend"
+               transform="translate(0,-60)">
+                <g class="nvd3 nv-legend" transform="translate(0,20)">
+                    <g transform="translate(408.1363281250001,20)">
+                        <g class="nv-series" transform="translate(0,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(31, 119, 180); fill-opacity: 1; stroke: rgb(31, 119, 180);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                kia
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(47.34375,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(255, 127, 14); fill-opacity: 1; stroke: rgb(255, 127, 14);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                volkswagen
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(142.046875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(44, 160, 44); fill-opacity: 1; stroke: rgb(44, 160, 44);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                hyundai
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(216.09375,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(214, 39, 40); fill-opacity: 1; stroke: rgb(214, 39, 40);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                toyota
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(280.796875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(148, 103, 189); fill-opacity: 1; stroke: rgb(148, 103, 189);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                honda
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(346.171875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(140, 86, 75); fill-opacity: 1; stroke: rgb(140, 86, 75);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                chevrolet
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(426.875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(227, 119, 194); fill-opacity: 1; stroke: rgb(227, 119, 194);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                bmw
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(484.21875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(127, 127, 127); fill-opacity: 1; stroke: rgb(127, 127, 127);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                mercerdes
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(572.90625,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(188, 189, 34); fill-opacity: 1; stroke: rgb(188, 189, 34);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                mercedes
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(657.59375,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(23, 190, 207); fill-opacity: 1; stroke: rgb(23, 190, 207);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                audi
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-controlsWrap"/>
+        </g>
+    </g>
+</svg>

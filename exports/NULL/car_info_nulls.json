@@ -1,0 +1,43 @@
+[ {
+  "Brand" : "Audi",
+  "Model" : null,
+  "Year" : 2009,
+  "Fuel_Type" : "Electric",
+  "Transmission" : "Automatic",
+  "Mileage" : 111448,
+  "Doors" : 5,
+  "Owner_Count" : 1,
+  "Price" : 9271,
+  "Pollution" : "Low",
+  "CO2_Emissions" : "0",
+  "Engine_Size" : "1.2",
+  "License_Plate" : "MN-90-PR"
+}, {
+  "Brand" : "Mercedes",
+  "Model" : "GLA",
+  "Year" : 2013,
+  "Fuel_Type" : "Petrol",
+  "Transmission" : "Manual",
+  "Mileage" : 205005,
+  "Doors" : 2,
+  "Owner_Count" : 2,
+  "Price" : 5799,
+  "Pollution" : "High",
+  "CO2_Emissions" : "158",
+  "Engine_Size" : "1.9",
+  "License_Plate" : null
+}, {
+  "Brand" : null,
+  "Model" : "GLA",
+  "Year" : 2011,
+  "Fuel_Type" : "Diesel",
+  "Transmission" : "Manual",
+  "Mileage" : 140263,
+  "Doors" : 4,
+  "Owner_Count" : 5,
+  "Price" : 8594,
+  "Pollution" : "High",
+  "CO2_Emissions" : "170",
+  "Engine_Size" : "4.0",
+  "License_Plate" : "MN-90-PS"
+} ]

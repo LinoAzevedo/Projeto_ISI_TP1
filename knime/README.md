@@ -1,0 +1,1 @@
+Coloca aqui os ficheiros .knwf do KNIME (File > Export KNIME Workflow).

@@ -1,0 +1,149 @@
+[
+    {
+        "id": "ec96fd2dd8cf8cc9",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d7a494c3eba6ca7",
+        "type": "http in",
+        "z": "ec96fd2dd8cf8cc9",
+        "name": "",
+        "url": "/avg-co2",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "8737da4da5348810",
+                "cd377407446c5a4f",
+                "0faa89d359f5f781"
+            ]
+        ]
+    },
+    {
+        "id": "8737da4da5348810",
+        "type": "debug",
+        "z": "ec96fd2dd8cf8cc9",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cd377407446c5a4f",
+        "type": "http response",
+        "z": "ec96fd2dd8cf8cc9",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0faa89d359f5f781",
+        "type": "function",
+        "z": "ec96fd2dd8cf8cc9",
+        "name": "function 1",
+        "func": "const dadosRecebidos = msg.payload;\n\nconst labels = [];\nconst data = [];\n\n// O resto do código funciona perfeitamente\ndadosRecebidos.forEach(function(item) {\n    labels.push(item.Brand);\n    data.push(item.avg_co2);\n});\n\nmsg.payload = [{\n    \"series\": [\"Média de Emissões de CO2\"],\n    \"data\": [data], // Nota: data já é um array, então fica [ [valores] ]\n    \"labels\": labels\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "cc2de784426c2f1d"
+            ]
+        ]
+    },
+    {
+        "id": "cc2de784426c2f1d",
+        "type": "ui_chart",
+        "z": "ec96fd2dd8cf8cc9",
+        "name": "",
+        "group": "03c40acc9d759405",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "label": "Média de CO2 por Marca",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03c40acc9d759405",
+        "type": "ui_group",
+        "name": "",
+        "tab": "6d223beeffc57217",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6d223beeffc57217",
+        "type": "ui_tab",
+        "name": "Relatórios",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7adf495ba6d16ef1",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

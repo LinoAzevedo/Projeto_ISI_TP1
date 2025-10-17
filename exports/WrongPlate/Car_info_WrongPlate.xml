@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <item>
+        <Brand>hyundai</Brand>
+        <Model>elantra</Model>
+        <License_Plate>mn-hh-pp</License_Plate>
+        <Reason>bad_format</Reason>
+    </item>
+</root>
